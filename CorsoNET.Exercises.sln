@@ -5,6 +5,10 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Team.Exercise.Polimorfismo.Eurozone", "Eurozone\Team.Exercise.Polimorfismo.Eurozone.csproj", "{6E93D132-F3BA-4151-8390-460032E0B6B4}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayExercises", "ArrayExercises\ArrayExercises.csproj", "{617C1584-6451-4D2A-A57B-F0BB29D71A0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Esercizio Proxy", "Esercizio Proxy\Esercizio Proxy.csproj", "{C39AB4F7-17E5-4367-80E5-8E5653B47274}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{6E93D132-F3BA-4151-8390-460032E0B6B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E93D132-F3BA-4151-8390-460032E0B6B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E93D132-F3BA-4151-8390-460032E0B6B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{617C1584-6451-4D2A-A57B-F0BB29D71A0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{617C1584-6451-4D2A-A57B-F0BB29D71A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{617C1584-6451-4D2A-A57B-F0BB29D71A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{617C1584-6451-4D2A-A57B-F0BB29D71A0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C39AB4F7-17E5-4367-80E5-8E5653B47274}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C39AB4F7-17E5-4367-80E5-8E5653B47274}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C39AB4F7-17E5-4367-80E5-8E5653B47274}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C39AB4F7-17E5-4367-80E5-8E5653B47274}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Eurozone
+namespace Eurozone.Country
 {
     internal class CountryUE : Country, UnioneEuropea, CorteEuropea, EuroCentralBank
     {

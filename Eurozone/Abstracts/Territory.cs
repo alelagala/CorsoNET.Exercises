@@ -10,7 +10,7 @@ namespace Eurozone
     {
         protected int popolazione;
         protected float areaGeografica;
-        protected string continente;
+        public string continente;
 
         public Territory(int _popolazione, float _areaGeografica, string _continente)
         {

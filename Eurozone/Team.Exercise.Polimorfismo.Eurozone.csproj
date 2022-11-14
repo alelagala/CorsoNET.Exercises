@@ -44,6 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Country\Citizen.cs" />
+    <Compile Include="Country\City.cs" />
+    <Compile Include="Country\Continent.cs" />
     <Compile Include="Country\Country.cs" />
     <Compile Include="Country\CountryEU_ONU.cs" />
     <Compile Include="Country\CountryONU.cs" />
