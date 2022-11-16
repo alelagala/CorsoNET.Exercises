@@ -24,13 +24,16 @@ namespace Esercizio_FileSystem
         }
         public static void WriteOnFile<T>(List<T> list)
         {
-            
+            string current = Environment.CurrentDirectory;
+            StringBuilder sb = new StringBuilder();
             if (list is List<Person>)
             {
                 for(int i = 0; i < list.Count; i++)
                 {
                     var person = list[i] as Person;
-                    WritePerson(person);
+                    sb.Clear();
+                    sb.AppendLine($"Name:{person.Name}, Surname:{person.Surname},Age:{person.Age}");
+                    File.AppendAllText(Path.Combine(current, "persons.txt"), sb.ToString());
                 }                
             }
             else if (list is List<Account>)
@@ -38,24 +41,24 @@ namespace Esercizio_FileSystem
                 for (int i = 0; i < list.Count; i++)
                 {
                     var account = list[i] as Account;
-                    WriteAccount(account);
+                    sb.Clear();
+                    sb.AppendLine($"Account id:{account.Id}, Account name:{account.Name}");
+                    File.AppendAllText(Path.Combine(current, "accounts.txt"), sb.ToString());
                 }
             }
         }
 
         public static void WritePerson(Person person)
         {
-            string current = Environment.CurrentDirectory;
+            
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"Name:{person.Name}, Surname:{person.Surname},Age:{person.Age}");
-            File.AppendAllText(Path.Combine(current, "persons.txt"), sb.ToString());
+            
         }
         public static void WriteAccount(Account account)
         {
             string current = Environment.CurrentDirectory;
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"Account id:{account.Id}, Account name:{account.Name}");
-            File.AppendAllText(Path.Combine(current, "accounts.txt"), sb.ToString());
+            
         }
 
 
