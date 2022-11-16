@@ -14,14 +14,8 @@ namespace Esercizio_FileSystem
             List<Account> accounts = new List<Account>() { new Account(928, "BancoPosta"), new Account(2873, "Postepay") };
             WriteOnFile(persons);
             WriteOnFile(accounts);
-
-            
-
-
-
-
-
         }
+
         public static void WriteOnFile<T>(List<T> list)
         {
             string current = Environment.CurrentDirectory;
@@ -47,22 +41,6 @@ namespace Esercizio_FileSystem
                 }
             }
         }
-
-        public static void WritePerson(Person person)
-        {
-            
-            StringBuilder sb = new StringBuilder();
-            
-        }
-        public static void WriteAccount(Account account)
-        {
-            string current = Environment.CurrentDirectory;
-            StringBuilder sb = new StringBuilder();
-            
-        }
-
-
-
     }
 
     
