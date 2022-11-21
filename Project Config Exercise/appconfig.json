@@ -1,0 +1,8 @@
+{
+  "settings": {
+    "SMTP": "smtp.gmail.com",
+    "POP": "pop.gmail.com",
+    "HTTP": "post",
+    "COMPANY": "posteitaliane.it"
+  }
+}

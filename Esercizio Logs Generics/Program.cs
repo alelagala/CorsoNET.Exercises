@@ -16,14 +16,18 @@ namespace Esercizio_Logs_Generics
 
             string path = Path.Combine(Environment.CurrentDirectory, $"{alex.GetType().Name}.csv");
             List<Person> list = new List<Person>();
+            Log(alex);
+            Log(account1);
             list=LoadFromFile<Person>(path);
+
         }
 
         public static void Log<T>(T item) where T : class
         {
             var properties= item.GetType().GetProperties();
             var itemName = item.GetType().Name;
-            string path = Path.Combine(Environment.CurrentDirectory,$"{itemName}.csv");
+            string path= Path.Combine(Environment.CurrentDirectory, $"{itemName}.csv");
+            
             if (!File.Exists(path))
             {
                 foreach(var property in properties)
