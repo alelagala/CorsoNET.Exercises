@@ -25,6 +25,7 @@ namespace Esercizio_Logs_Generics
         public static void Log<T>(T item) where T : class
         {
             var properties= item.GetType().GetProperties();
+            Console.WriteLine(properties[1]);
             var itemName = item.GetType().Name;
             string path= Path.Combine(Environment.CurrentDirectory, $"{itemName}.csv");
             
